@@ -1,0 +1,20 @@
+{
+    "user": "pitbull",
+    "email": "pitbull@pitbull.io",
+    "password": "pitbull",
+    "role": "superadmin",
+    "telegram": {
+        "botid": "",
+        "chatids": [
+            
+        ]
+    },
+    "emails": {
+        "recipients": []
+    },
+    "sms": {
+        "credits": 0,
+        "sent": 0,
+        "numbers": []
+    }
+}

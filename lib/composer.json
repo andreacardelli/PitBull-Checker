@@ -1,0 +1,14 @@
+{
+    "name": "pittbullchecker/lib",
+    "authors": [
+        {
+            "name": "Andrea Cardelli",
+            "email": "cardelli@aperion.it"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpmailer/phpmailer": "^6.0",
+        "altorouter/altorouter": "^1.2"
+    }
+}

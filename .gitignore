@@ -1,0 +1,15 @@
+logs/**
+logs/*.csv
+logs/*.log
+config/checks/*.json
+config/checks/*.json.lock
+config/users/*.json
+config/users/users.json-old
+config/checks/template/*
+config/users/*.json.lock
+config/config.php
+lib/composer.lock
+lib/vendor/**
+
+# not ignore
+!config/users/pitbull.json
