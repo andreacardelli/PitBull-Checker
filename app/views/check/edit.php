@@ -99,7 +99,7 @@
 							<h4 class="col-md-5 col-md-push-3">Form Params<div data-parent-id="params-container" title="Add a params" class="tooltips button-service addParams"><i class="glyphicon glyphicon-plus"></i> Add params</div></h4>
 							<div class="clearfix"></div>
 
-							<?php foreach ($check['check']['form_params'] as $key => $value) { ?>
+							<?php foreach ((array)$check['check']['form_params'] as $key => $value) { ?>
 
 							<div class="form-group rowParam">
 								<div class="col-md-2 col-md-push-3">
@@ -150,7 +150,7 @@
 							<div class="col-md-3 col-md-push-3"><strong>Address</strong></div>
 							<div class="clearfix"></div>
 
-							<?php foreach ($check['alert'] as $channel => $array) { ?>
+							<?php foreach ((array)$check['alert'] as $channel => $array) { ?>
 							<?php foreach ($array as $value) { ?>
 							<div class="form-group">
 								<div class="col-md-3 col-md-push-3">
@@ -190,7 +190,7 @@
 							<div class="col-md-3 col-md-push-3"><strong>Value</strong></div>
 							<div class="clearfix"></div>
 
-						<?php foreach ($check['check']['success_criteria'] as $key => $success_criteria) { ?>
+						<?php foreach ((array)$check['check']['success_criteria'] as $key => $success_criteria) { ?>
 							<div class="form-group">
 								<div class="col-md-3 col-md-push-3">
 									<!-- <label class="form-label">Action</label> -->

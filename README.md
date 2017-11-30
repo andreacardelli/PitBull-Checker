@@ -34,7 +34,7 @@ PitBull Checker requires Apache, Php7, Php-curl (available in any hosting plan) 
 To install from GitHub, clone the repository and install dependencies using composer:
 ```bash
   $ git clone git://github.com/andreacardelli/pitbull-checker.git
-  $ cd pitbull-checker
+  $ cd pitbull-checker/lib/
   $ php composer.phar update 
 ```
 Rename sample configuration file 
@@ -46,7 +46,7 @@ Edit configuration file located in /your-path/pitbull-checker/config/config.php 
 
 Enable the cron job at each minute (* * * * *):
 ```bash
-/path/to/your/php /yourhostingrootpath/pitbull-checker/checker/check.php >> /your-tmp-dir/checker.log 2>&1 
+/path/to/your/php /yourhostingrootpath/pitbull-checker/checker/index.php >> /your-tmp-dir/checker.log 2>&1 
 ```
 Visit your new application at: http://yourdomain/pitbull-checker/
 

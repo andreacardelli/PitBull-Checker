@@ -13,3 +13,4 @@ lib/vendor/**
 
 # not ignore
 !config/users/pitbull.json
+!logs/.gitkeep

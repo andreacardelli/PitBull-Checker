@@ -361,6 +361,18 @@ function remove_outliers($array) {
 function am_i_online() {
     $retval = 0;
     system("ping -c 1 -q -w 1 8.8.8.8 > /dev/null", $retval);
+
+    // If ping is disabled or not permitted
+    // We do a double check via tcp on port 80
+    if(!($retval == 0)) {
+        if(fsockopen('google.com', '80', $errCode, $errStr, 1) != false)
+            $retval = 0;
+    }
+
+    // if both ping and tcp failed => no internet connection
+
     if (!($retval == 0)) {echo date('Y-m-d H:i:s')." - Internet connection is not available".PHP_EOL;}
     return $retval == 0;
 }
+
+?>
